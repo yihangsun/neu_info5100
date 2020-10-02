@@ -1,0 +1,22 @@
+public class ReverseString {
+	
+	public static void main (String[] args) {
+		System.out.print(reverse("the sky is blue"));
+	}
+	
+	public String reverse (String s) {
+		if (s.length() <= 1 || s == null) return s;
+		String[] sNoSpace = s.split(" ");
+		int sLength = sNoSpace.length;
+		for (int i = 0; i < sLength; i++) {
+			String hold = sNoSpace[i];
+			sNoSpace[i] = sNoSpace[sLength - 1 - i];
+			sNoSpace[sLength - 1 - i] = hold;
+		}
+		s = "";
+		for (String ss : sNoSpace) {
+			s += ss +  " ";
+		}
+		return s;
+	}
+}

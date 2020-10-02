@@ -1,1 +1,0 @@
-INDEX VERSION 1.131+/Users/yihangsun/Desktop/neu_info5100/.metadata/.plugins/org.eclipse.jdt.core

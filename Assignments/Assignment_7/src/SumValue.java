@@ -8,7 +8,7 @@ public class SumValue {
    arr[i] = rd.nextInt();
   }
  }
- 
+
  /*get sum of an array using 4 threads*/
  static long sum(int[] arr){
   if (arr.length == 0 || arr == null) return 0;
@@ -37,15 +37,7 @@ public class SumValue {
   td1.start();
   td2.start();
   td3.start();
-  td4.start();
-  try {
-   td1.join();
-   td2.join();
-   td3.join();
-   td4.join();
-  } catch (InterruptedException e){
-   e.printStackTrace();
-  }
+  td4.start()
   return sumValue.get();
  }
 
